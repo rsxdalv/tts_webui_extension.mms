@@ -180,7 +180,6 @@ def extension__tts_generation_webui():
     return {
         "package_name": "extension_mms",
         "name": "MMS",
-        "version": "0.0.1",
         "requirements": "git+https://github.com/rsxdalv/extension_mms@main",
         "description": "MMS (Massively Multilingual Speech) is a text-to-speech model supporting over 1000 languages",
         "extension_type": "interface",
