@@ -1,12 +1,12 @@
 import setuptools
 
 setuptools.setup(
-    name="extension_mms",
+    name="tts_webui_extension.mms",
     packages=setuptools.find_namespace_packages(),
     version="0.0.1",
     author="rsxdalv",
     description="MMS (Massively Multilingual Speech) is a text-to-speech model supporting over 1000 languages",
-    url="https://github.com/rsxdalv/extension_mms",
+    url="https://github.com/rsxdalv/tts_webui_extension.mms",
     project_urls={},
     scripts=[],
     install_requires=[
@@ -23,3 +23,4 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
 )
+
