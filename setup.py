@@ -1,11 +1,17 @@
 import setuptools
+from pathlib import Path
+
+HERE = Path(__file__).parent
+README = (HERE / "README.md").read_text(encoding="utf-8") if (HERE / "README.md").exists() else ""
 
 setuptools.setup(
     name="tts_webui_extension.mms",
     packages=setuptools.find_namespace_packages(),
-    version="0.0.1",
+    version="0.0.2",
     author="rsxdalv",
     description="MMS (Massively Multilingual Speech) is a text-to-speech model supporting over 1000 languages",
+    long_description=README,
+    long_description_content_type="text/markdown",
     url="https://github.com/rsxdalv/tts_webui_extension.mms",
     project_urls={},
     scripts=[],
