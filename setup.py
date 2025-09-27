@@ -7,7 +7,7 @@ README = (HERE / "README.md").read_text(encoding="utf-8") if (HERE / "README.md"
 setuptools.setup(
     name="tts_webui_extension.mms",
     packages=setuptools.find_namespace_packages(),
-    version="0.0.2",
+    version="0.0.3",
     author="rsxdalv",
     description="MMS (Massively Multilingual Speech) is a text-to-speech model supporting over 1000 languages",
     long_description=README,
@@ -20,7 +20,7 @@ setuptools.setup(
         "iso639-lang==2.2.3",
     ],
     package_data={
-        "extension_mms.resources": ["*.txt"],
+        "tts_webui_extension.mms.resources": ["*.txt"],
     },
     include_package_data=True,
     classifiers=[

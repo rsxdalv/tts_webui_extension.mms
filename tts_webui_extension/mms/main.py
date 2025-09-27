@@ -77,7 +77,7 @@ def get_mms_languages():
     # Get the path to the languages file in the resources directory
     try:
         # Try to use importlib.resources for Python 3.9+
-        with pkg_resources.open_text("extension_mms.resources", "mms-languages-iso639-3.txt") as f:
+        with pkg_resources.open_text("tts_webui_extension.mms.resources", "mms-languages-iso639-3.txt") as f:
             for line in f:
                 yield (Lang(line[:3]).name + line[3:].strip(), line[:3])
     except (ImportError, ModuleNotFoundError):
