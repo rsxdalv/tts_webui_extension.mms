@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tts_webui_extension.mms"
+version = "0.0.4"
+description = "MMS (Massively Multilingual Speech) is a text-to-speech model supporting over 1000 languages"
+readme = "README.md"
+authors = [
+    {name = "rsxdalv"}
+]
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "transformers>=4.30.0",
+    "iso639-lang==2.2.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/rsxdalv/tts_webui_extension.mms"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+# This will find all namespace packages automatically
+namespaces = true
+
+[tool.setuptools.package-data]
+"tts_webui_extension.mms.resources" = ["*.txt"]
