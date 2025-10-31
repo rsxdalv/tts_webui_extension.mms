@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tts_webui_extension.mms"
-version = "0.0.4"
+version = "0.0.5"
 description = "MMS (Massively Multilingual Speech) is a text-to-speech model supporting over 1000 languages"
 readme = "README.md"
 authors = [
