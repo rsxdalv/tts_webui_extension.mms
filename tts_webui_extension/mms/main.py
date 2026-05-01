@@ -151,7 +151,11 @@ def ui():
 
 def extension__tts_generation_webui():
     ui()
-    
+
+    from .openai_api_adapter import register
+
+    register()
+
     return {
         "package_name": "extension_mms",
         "name": "MMS",
